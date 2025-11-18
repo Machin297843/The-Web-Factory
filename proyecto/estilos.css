@@ -1,0 +1,219 @@
+	body{
+			background-color: black;
+			font-family: "Alan Sans", sans-serif;
+		}
+ 
+ 	*{
+ 			margin: 0px;
+ 		}
+
+	header{
+			width: 100%;
+			height: 120px;
+			background-color: lightcoral;
+		}
+
+	nav{
+			width: 100%;
+			height: 50px;
+			background-color: black;
+		}
+	section{
+			width: 70%;
+			background-color: lightgreen;
+			float: left;
+		}
+
+	aside{
+			width: 30%;
+			background-color: lightblue;
+			float: right;
+		}
+
+	footer{
+			width: 100%;
+			height: 100px;
+			background-color: black;
+			color: white;
+			clear: both;
+		}
+
+/*-----------------ESTILOS DE LA PORTADA Y EL CABEZAL----*/
+
+	.hero-image {
+	  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("imagen2.jpg");
+	  height: 100%;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  position: relative;
+	}
+ 		
+ 	a{
+ 		text-decoration: none;
+ 	}
+
+	.unifrakturmaguntia-regular {
+		  font-family: "UnifrakturMaguntia", cursive;
+		  font-weight: 400;
+		  font-style: normal;
+		}
+
+	h1{
+			font-size: 40px;
+			text-align: center;
+			line-height: 120px ;
+			color: whitesmoke;
+		}
+	h2{
+			font-size: 30px;
+			text-align: center;
+			color: darkred;
+			padding:20px;
+		}
+	h3{
+			font-size: 20px;
+			text-align: center;
+			line-height: 100px;
+		}
+
+	img{
+			width: 50%;
+			border-radius: 10px;
+			display:block;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+	p{
+			color: white;
+			font-size: 14px;
+			padding: 70px;
+			margin: 20px;
+		}
+
+	/*--------------------elemento de igual ALTO-----------*/
+	#contenedor{
+			overflow:hidden;
+		}
+	section, aside{
+			padding-bottom: 100%;
+			margin-bottom: -100%;
+		}
+	/*----------------estilos de tabla------------*/
+
+	table{
+			width: 80%;
+			margin: auto;
+			background-color: grey;
+			border-collapse: collapse;
+		}
+
+    tr:nth-child(even){background-color: #f2f2f2;}
+	tr:nth-child(odd){background-color: #b7b7b7;}
+    tr:hover {background-color: #ffff99;}
+
+	td, th{
+			width: 33%;
+			height: 20px;
+			border: 1px solid blue;
+			padding: 10px;
+		}
+	th{
+			background-color: #33bb77;
+			color: white;
+		}
+
+	#servicios1{
+			margin-bottom: 20px;
+		}
+
+	#servicios2 th{
+			background-color: #ff9933;
+		}
+	.centrar{
+			text-align: center;
+
+		}
+
+/*------------estilos de FORMULARIO--------*/
+
+	form {
+	  border-radius: 5px;
+	  background-color: #f2f2f2;
+	  padding: 20px;
+	  margin-left: 50px;
+	  margin-right: 50px;
+	}
+
+
+	label {display: block;}
+
+	input[type=text], select {
+	  width: 100%;
+	  padding: 12px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	}
+
+	input[type=submit] {
+	  width: 100%;
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 14px;
+	  margin: 8px 0;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	}
+
+	input[type=submit]:hover {
+	  background-color: #45a049;
+	}
+
+/*----estilos del MENU DE NAVEGACION-----*/
+
+	
+
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  background-color: #333333;
+	  display: flex;
+	}
+
+	ul li a {
+	  display: block;
+	  color: white;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	ul li a:hover:not(.active) {
+	  background-color: #111111;
+	}
+
+	ul li a.active {
+	  background-color: #04AA6D;
+	}
+
+
+
+/*---------------------reglas de medios-----------------*/
+
+
+@media only screen and (max-width: 800px) {
+  section, aside {
+    width:100%;
+  }
+  #servicios2, form{
+  	margin-bottom: 20px;
+  }
+
+}
+
+
